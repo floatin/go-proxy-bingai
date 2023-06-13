@@ -146,7 +146,9 @@ const downloadPrompt = async (config: IPromptDownloadConfig) => {
   <NModal class="w-11/12 xl:w-[900px]" v-model:show="isShowPromptSotre" preset="card" title="提示词库">
     <div class="flex justify-start flex-wrap gap-2 px-5 pb-2">
       <NInput class="basis-full xl:basis-0 xl:min-w-[300px]" placeholder="搜索提示词" v-model:value="keyword" :clearable="true"></NInput>
+      <!--
       <NButton secondary type="info" @click="isShowDownloadPop = true">下载</NButton>
+      -->
       <NButton secondary type="info" @click="showAddPromptPop">添加</NButton>
       <NUpload class="w-[56px] xl:w-auto" accept=".json" :default-upload="false" :show-file-list="false" @change="importPrompt">
         <NButton secondary type="success" :loading="isImporting">导入</NButton>
