@@ -35,15 +35,6 @@ const navType = {
 };
 const navConfigs = [
   {
-    key: navType.github,
-    label: '开源地址',
-    url: 'https://github.com/adams549659584/go-proxy-bingai',
-  },
-  {
-    key: navType.version,
-    label: '版本信息',
-  },
-  {
     key: navType.chatService,
     label: '服务选择',
   },
@@ -76,11 +67,6 @@ const renderDropdownLabel = (option: DropdownOption) => {
 
 const handleSelect = (key: string) => {
   switch (key) {
-    case navType.version:
-      {
-        message.success(`当前版本号为：${__APP_INFO__.version}`);
-      }
-      break;
     case navType.chatService:
       {
         isShowChatServiceSelectModal.value = true;
