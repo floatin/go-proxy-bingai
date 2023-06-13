@@ -39,10 +39,6 @@ const navConfigs = [
     label: '服务选择',
   },
   {
-    key: navType.promptStore,
-    label: '提示词库',
-  },
-  {
     key: navType.setToken,
     label: '设置用户',
   },
