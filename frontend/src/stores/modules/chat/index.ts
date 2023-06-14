@@ -28,7 +28,7 @@ export const useChatStore = defineStore(
         label: 'Bing 官方',
       },
       {
-        baseUrl: 'https://sydney.vcanbb.chat',
+        baseUrl: '',
         label: 'Cloudflare',
       },
       {
